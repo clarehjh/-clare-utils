@@ -1,0 +1,23 @@
+# 忽略目录
+/dist
+/node_modules
+
+
+# 忽略文件
+*.log
+**/*.tsbuildinfo
+.eslintcache
+pnpm-debug.log*
+
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
