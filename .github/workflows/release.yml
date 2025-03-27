@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - beta
+
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -12,13 +12,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # 确保获取完整的 Git 历史
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
           registry-url: 'https://registry.npmjs.org'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: '10' # 指定 pnpm 版本，例如 10.x
 
       - name: Install Dependencies
         run: pnpm install
