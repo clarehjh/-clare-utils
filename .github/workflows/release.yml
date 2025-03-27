@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - master
-
+permissions: # 添加权限配置
+  contents: write # 允许写入仓库内容（推送代码和标签）
 jobs:
   release:
     runs-on: ubuntu-latest
