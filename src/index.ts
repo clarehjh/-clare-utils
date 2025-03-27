@@ -4,3 +4,6 @@ export * from './utils/errorHandler';
 export * from './utils/download';
 export * from './utils/dom';
 export * from './utils/checkUpdate';
+export * from './utils/debounce';
+export * from './utils/throttle';
+export * from './utils/eleValidate';
