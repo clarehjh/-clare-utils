@@ -1,7 +1,7 @@
 # 忽略目录
-/dist
-/node_modules
-
+node_modules
+node_modules/
+dist
 
 # 忽略文件
 *.log
